@@ -1,0 +1,89 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.movie-form, .movie-list {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.movie-form label {
+    font-weight: bold;
+}
+
+.movie-form input[type="text"], .movie-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.movie-form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.movie-form button:hover {
+    background: #555;
+}
+
+.movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.movie-list h3 {
+    margin: 0 0 10px;
+}
+
+.movie-list p {
+    margin: 0 0 10px;
+}
+
+.movie-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.movie-list a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "titanic",
+      "genre": "",
+      "rating": ""
+    },
+    {
+      "id": "2",
+      "name": "The Shawshank Redemption",
+      "genre": "Drama",
+      "rating": 9.3
+    },
+    {
+      "id": "3",
+      "name": "The Godfather",
+      "genre": "Crime",
+      "rating": 9.2
+    },
+    {
+      "id": "1",
+      "name": "",
+      "genre": "",
+      "rating": ""
+    }
+  ]
+}

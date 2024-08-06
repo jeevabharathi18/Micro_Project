@@ -1,3 +1,6 @@
 [submodule "Micro_Project"]
 	path = Micro_Project
 	url = https://github.com/jeevabharathi18/Micro_Project.git
+[submodule "Angularmicroproject/Micro_Project"]
+	path = Angularmicroproject/Micro_Project
+	url = https://github.com/jeevabharathi18/Micro_Project.git

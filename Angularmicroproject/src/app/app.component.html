@@ -1,0 +1,91 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <h1>Movie Management System</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <form #myForm="ngForm">
+                    <div class="form-group">
+                        <label for="Movie Id">Movie Id</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="id" 
+                               #movieId="ngModel" ngModel
+                               required
+                               pattern="[0-9]+"
+                        />
+                    </div>
+
+                    <div *ngIf="movieId.touched">
+                        <div *ngIf="movieId.errors?.['required']">
+                            <b style="color:red">Movie ID Required.</b>
+                        </div>
+                        <div *ngIf="movieId.errors?.['pattern']">
+                            <b style="color:red">Invalid Movie ID.</b>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Movie Name">Movie Name</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="name" 
+                               #movieName="ngModel" ngModel
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="Movie Genre">Movie Genre</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="genre" 
+                               #movieGenre="ngModel" ngModel
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="Movie Rating">Movie Rating</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="rating" 
+                               #movieRating="ngModel" ngModel
+                        />
+                    </div>
+                                      
+                    <button class="btn btn-success" (click)="insertMovie(myForm.value)">
+                        Insert 
+                    </button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-primary" (click)="updateMovie(myForm.value)"> 
+                        Update 
+                    </button>&nbsp;&nbsp;
+                    <button class="btn btn-danger" (click)="deleteMovie(myForm.value)">
+                        Delete 
+                    </button>&nbsp;&nbsp;
+                    <button class="btn btn-warning" (click)="findMovie(myForm.value)">
+                        Find 
+                    </button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-info" (click)="findAllMovies()">
+                        Find All
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3>{{ result }}</h3>
+    <div style="width: 100%;" *ngIf="flag">
+        <table width="80%" align="center" class="table table-bordered">
+            <tr><th>Movie Id</th><th>Movie Name</th><th>Movie Genre</th><th>Movie Rating</th></tr> 
+            <tr *ngFor="let movie of movieArr">
+                <td>{{ movie.id }}</td>
+                <td>{{ movie.name }}</td>
+                <td>{{ movie.genre }}</td>
+                <td>{{ movie.rating }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
