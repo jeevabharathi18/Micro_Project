@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": "101",
+      "empName": "Jeeva",
+      "empSalaary": 2000
+    },
+    {
+      "id": "102",
+      "empName": "Bharathi",
+      "empSalary ": 3000
+    },
+    {
+      "id": "85e8",
+      "empName": "Jeeva",
+      "empSalary": 0
+    },
+    {
+      "id": "02b4",
+      "empName": "Jeeva",
+      "empSalary": 0
+    },
+    {
+      "id": "4d67",
+      "empName": "Jeeva",
+      "empSalary": 0
+    },
+    {
+      "id": "4949",
+      "empName": "Jeeva",
+      "empSalary": "20000"
+    },
+    {
+      "id": "de97",
+      "empName": "john",
+      "empSalary": "467777"
+    }
+  ]
+}
